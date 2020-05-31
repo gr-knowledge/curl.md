@@ -24,3 +24,19 @@ curl -i http://jsonplaceholder.typicode.com/posts/1
 ```properties
 curl -I http://jsonplaceholder.typicode.com/posts/1
 ```
+
+### Environment Variables in Windows
+```properties
+set API_PORT=8080
+```
+```properties
+set API_PORT
+# API_PORT=8080
+```
+```properties
+echo %API_PORT%
+# 8080
+```
+```properties
+curl http://localhost:%API_PORT%/ip
+```
